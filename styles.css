@@ -344,84 +344,59 @@ div.footer h6 {
     padding-top: 6rem;
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:768px) {
     div.nav-bar {
-        padding: 1rem;
-        width: 100vw;
         display: flex;
-        justify-content: center;
+        font-size: smaller;
     }
     div.logo {
         font-size: 1rem;
     }
-    ul li {
-        font-size: 0.8rem;
+    ul.nav-links {
+        display: flex;
+        flex-direction: column;
     }
     div.hero-section {
         padding: 5rem 6rem;
+        font-size: smaller;
+    }
+    div.hero-content-heading p,
+    h3 {
+        text-align: justify;
     }
     div.hero-content-heading h3 {
-        font-size: 1.5rem;
-    }
-    div.hero-content-heading p {
-        text-align: justify;
-        padding-top: 0.7rem;
-        color: #88949B;
-        font-size: 0.8rem;
-        letter-spacing: 2px;
-        font-weight: 300;
-    }
-    div.hero-content-btn {
-        font-size: 0.9rem;
+        text-align: center;
     }
     div.hero-background {
-        background: #f0f0f0;
-        padding: 9rem;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 5rem;
+    }
+    div.hero-background-pos {
+        display: none;
     }
     div.snapshot-team {
-        padding: 1rem;
+        padding-top: 2rem;
+    }
+    div.snapshot-box {
+        padding: 2rem;
     }
     div.snapshot-box-content {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-direction: column;
     }
     div.footer {
-        padding: 1rem;
-    }
-    div.footer-content h4 {
-        color: #bcc3c7;
-        font-size: 1rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-    div.footer-content p {
-        color: #88949B;
-        font-size: 0.8rem;
-        letter-spacing: 2px;
-        padding-top: 0.8rem;
+        padding: 2rem;
     }
     div.footer-input {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 1rem;
     }
-    input[type="text"] {
-        margin-right: 10px;
-        padding: 10px 20px;
-        width: 25%;
-    }
+    input[type="text"],
     input[type="email"] {
-        margin-right: 10px;
-        padding: 10px 20px;
-        width: 25%;
-    }
-     ::placeholder {
-        color: #A6A5AA;
-        font-size: 0.5rem;
+        width: 50%;
+        margin: 0.5rem;
     }
 }
