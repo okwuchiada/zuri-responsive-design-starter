@@ -1,6 +1,11 @@
-const openNav = document.getElementById('open')
-const nav = document.getElementById('nav-bar')
+const sideBar = () => {
+    const side = document.querySelector('.side-bar');
+    const navLinks = document.querySelector('.nav-links');
 
-toggle.addEventListener('click', () => {
-    nav.classList.toggle('active')
-})
+
+    side.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    })
+}
+
+sideBar();
